@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>ContinentiWeb</display-name>
+	<servlet>
+		<servlet-name>continenti</servlet-name>
+		<servlet-class>it.objectmethod.continenti.servlet.ContinentiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>continenti</servlet-name>
+		<url-pattern>/continenti</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>nazioni</servlet-name>
+		<servlet-class>it.objectmethod.continenti.servlet.NazioniServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>nazioni</servlet-name>
+		<url-pattern>/nazioni</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>citta</servlet-name>
+		<servlet-class>it.objectmethod.continenti.servlet.CittaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>citta</servlet-name>
+		<url-pattern>/citta</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ricerca</servlet-name>
+		<servlet-class>it.objectmethod.continenti.servlet.RicercaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ricerca</servlet-name>
+		<url-pattern>/ricerca</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PreForm</servlet-name>
+		<servlet-class>it.objectmethod.continenti.servlet.PreFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PreForm</servlet-name>
+		<url-pattern>/PreForm</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ModificaInserisci</servlet-name>
+		<servlet-class>it.objectmethod.continenti.servlet.ModificaInserisciServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificaInserisci</servlet-name>
+		<url-pattern>/ModificaInserisci</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
